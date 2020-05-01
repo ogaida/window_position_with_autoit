@@ -30,7 +30,7 @@ Func Positioniere($name,$aPos)
         WinSetState($win, "", @SW_RESTORE)
       endif
       WinMove($win, "", $aPos[0] , $aPos[1] , $aPos[2] , $aPos[3])
-    Elses
+    Else
       MsgBox($MB_SYSTEMMODAL, "AutoIt","Achtung: Das Fenster " & $name & " konnte nicht aktiviert werden!")
     EndIf
 EndFunc   ;==>Positioniere
